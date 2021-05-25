@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    >
+
+   <LinearLayout
+       android:id="@+id/loader"
+        android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#fff"
+       >
+       <pl.droidsonroids.gif.GifImageView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:src="@drawable/preloader2"
+           android:background="#fff"
+           />
+   </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_margin="8dp"
+            android:elevation="8dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popular Cities  "
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham"
+                android:textSize="14sp"
+                android:padding="8dp"
+                />
+          <androidx.recyclerview.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/cityrv"
+              />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotels Near You  (Recently added)"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham"
+                android:textSize="14sp"
+                android:padding="8dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hotelrv"
+                />
+
+            <TextView
+                android:id="@+id/ratingheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Highest Rated Hotel"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham"
+                android:textSize="14sp"
+                android:padding="8dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratedhotelrv"
+                />
+            <TextView
+                android:id="@+id/recomendationheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recommended For You"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham"
+                android:textSize="14sp"
+                android:padding="8dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recommendationrv"
+                />
+            <TextView
+                android:id="@+id/popularheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Most Popular Hotels"
+                android:textStyle="bold"
+                android:fontFamily="@font/gotham"
+                android:textSize="14sp"
+                android:padding="8dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/popularhotelrv"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

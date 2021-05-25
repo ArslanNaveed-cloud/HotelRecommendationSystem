@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#fff"
+                >
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imagecontainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/hotelimage2"
+                        android:scaleType="fitXY"
+                        android:padding="3dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:id="@+id/ratingwrapper"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:background="#99000000"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="0.8"
+                                android:text="--"
+                                android:textColor="#fff"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+
+                                />
+                            <ImageView
+                                android:id="@+id/star"
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/ic_001_star"
+                                android:layout_marginRight="5dp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:background="#72000000"
+                        android:layout_gravity="bottom"
+                        android:padding="5dp"
+                        android:layout_margin="5dp"
+
+                        >
+                        <TextView
+                            android:id="@+id/my_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Nathia Gali Pipe Line Track"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="22sp" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:background="#000"
+                android:layout_gravity="center"
+                />
+
+
+            <TextView
+                android:id="@+id/my_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Nathia Gali Pipe Line Track"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:paddingBottom="3dp"
+                />
+            <TextView
+                android:id="@+id/my_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Nathia Gali Pipe Line Track"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:paddingBottom="3dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                />
+
+            <TextView
+                android:id="@+id/my_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="asdasdasdsadsadasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdadasdasdas"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Gallery"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:padding="5dp"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:id="@+id/galley_imageslist"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                />
+
+            <TextView
+                android:id="@+id/myreviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="Reviews"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:padding="5dp"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:id="@+id/commentslist"
+
+                    />
+
+            </ScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/givefeedback"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Give Your Feedback"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    />
+
+
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/message"
+                    android:orientation="vertical" >
+                    <RadioButton
+                        android:id="@+id/radioone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Excellent Experience"
+                        android:checked="true"
+
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radiotwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Good Experience"
+                        />
+                    <RadioButton
+                        android:id="@+id/radiothree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fair Experience"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radiofour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Poor Experience"
+                        />
+                    <RadioButton
+                        android:id="@+id/radiofive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bad Experience"
+                        />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Rate this Hotel"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    />
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:numStars="5"
+                    android:layout_gravity="center"
+                    android:outlineAmbientShadowColor="@color/colorPrimary"
+                    android:stepSize="0.5"
+                    android:id="@+id/ratingbar"
+                    />
+                <Button
+                    android:id="@+id/submitrating"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Submit"
+                    android:layout_margin="10dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="#fff"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/showroombtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Show Rooms >>"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        />
+</LinearLayout>
